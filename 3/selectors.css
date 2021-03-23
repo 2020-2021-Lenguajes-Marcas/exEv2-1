@@ -1,27 +1,27 @@
 
 /* El elemento cuyo id es otra */
-<selector> {
+#otra {
       	background-color: gray;
 }
 
 /* Las secciones de la clase post */
-<selector> {
+section.post {
       	background-color: lightgray;
 }
 
 
 /* Todos los elementos h2 que sean hijos directos de main*/
-<selector> {
+main > h2 {
       	color: red;
 }
 
 
 /* Todos los elementos h2 que desciendan de una sección  de la clase posts*/
-<selector> {
+.posts h2 {
       	color: blue;
 }
 
 /* Cuando se pasa el ratón por encima de cualquier h2 */
-<selector> {
+h2:hover {
 	color: pink;
 }

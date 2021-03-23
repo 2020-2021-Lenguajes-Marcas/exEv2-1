@@ -2,8 +2,59 @@
 <html>
 <head>
 	<title>Ejercicio 1</title>
+	<style type="text/css">
+		html {
+			height: 100%;
+		}
+
+		body {
+			height: 100%;
+			display: grid;
+			/* con grid-templat-areas definimos qué celdas ocuparán cada capa, por ejemplo div1 ocupará las tres celdas de la primera fila, div2 la primera celda de la segunda fila, div3 la segunda celda de la segunda fila y div4 la tercera celda de la segunda fila */
+			grid-template-areas: 
+			'div1 div1 div1'
+			'div2 div3 div4';
+			/* grid-template-columns permite asignar un ancho a cada columna, por ejemplo en este caso
+				la última columna ocupará el 60% y las otras dos se repartirán el resto a partes iguales (auto)
+			 */
+			grid-template-columns: auto auto 60%;
+
+			grid-gap: 10px;
+		}
+
+		#div1 {
+			background-color: purple;
+			/* Es necesario asignarel un nombre a cada area para luego poder usarla en grid-template-areas */
+			grid-area: div1;
+		}
+
+
+		#div2 {
+			background-color: pink;
+			/* Es necesario asignarel un nombre a cada area para luego poder usarla en grid-template-areas */
+			grid-area: div2;
+		}
+
+		#div3 {
+			background-color: pink;
+			/* Es necesario asignarel un nombre a cada area para luego poder usarla en grid-template-areas */
+			grid-area: div3;
+		}
+
+		#div4 {
+			background-color: green;
+			/* Es necesario asignarel un nombre a cada area para luego poder usarla en grid-template-areas */
+			grid-area: div4;
+		}
+
+	</style>
 </head>
 <body>
+	<div id="div1"></div>
+	<div id="div2"></div>
+	<div id="div3"></div>
+	<div id="div4"></div>
+
 
 </body>
 </html>
